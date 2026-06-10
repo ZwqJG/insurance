@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(GIT_DIR=/Users/chenxiaoyan/Development/AI保险/insurance-proposal-mvp/.git GIT_WORK_TREE=/Users/chenxiaoyan/Development/AI保险/insurance-proposal-mvp git init)",
+      "Bash(unset GIT_DIR GIT_WORK_TREE)"
+    ]
+  }
+}

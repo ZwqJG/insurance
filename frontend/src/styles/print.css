@@ -1,0 +1,85 @@
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 12pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .no-print,
+  .preview-toolbar,
+  .editable-textarea:empty {
+    display: none !important;
+  }
+
+  .preview-page {
+    background: #fff !important;
+    padding: 0 !important;
+  }
+
+  .proposal-container {
+    max-width: 100% !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 20mm 16mm !important;
+  }
+
+  .proposal-title {
+    font-size: 18pt;
+    color: #1677ff !important;
+  }
+
+  .section-heading {
+    color: #1677ff !important;
+    font-size: 12pt;
+    border-bottom: 1px solid #bae0ff !important;
+  }
+
+  .section-block {
+    page-break-inside: avoid;
+    margin-bottom: 16pt;
+  }
+
+  .comparison-table {
+    page-break-inside: avoid;
+    font-size: 10pt;
+    width: 100%;
+  }
+
+  .comparison-table th {
+    background: #e8f4fd !important;
+    color: #1677ff !important;
+    font-size: 10pt;
+  }
+
+  .comparison-table td {
+    font-size: 10pt;
+    padding: 6pt 8pt;
+  }
+
+  .analysis-card {
+    page-break-inside: avoid;
+    border: 1px solid #ddd !important;
+    background: #fafafa !important;
+  }
+
+  .recommendation-box {
+    background: #f0f9ff !important;
+    border: 1px solid #bae0ff !important;
+    page-break-inside: avoid;
+  }
+
+  textarea,
+  input {
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    font-size: inherit !important;
+  }
+
+  @page {
+    margin: 20mm;
+    size: A4;
+  }
+}

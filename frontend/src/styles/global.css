@@ -1,0 +1,245 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'Microsoft YaHei', sans-serif;
+  background: #f5f7fa;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* 表单页整体容器 */
+.form-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e8f4fd 0%, #f0f9ff 100%);
+  padding: 32px 16px;
+}
+
+.form-card {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 48px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.form-header h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1677ff;
+  margin: 0 0 8px;
+}
+
+.form-header p {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+}
+
+.section-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin: 24px 0 16px;
+  padding-left: 10px;
+  border-left: 3px solid #1677ff;
+}
+
+.submit-btn {
+  width: 100%;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 32px;
+  border-radius: 8px;
+}
+
+/* 预览页 */
+.preview-page {
+  min-height: 100vh;
+  background: #f5f7fa;
+  padding: 24px 16px;
+}
+
+.preview-toolbar {
+  max-width: 900px;
+  margin: 0 auto 20px;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.proposal-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 48px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.proposal-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1677ff;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.section-block {
+  margin-bottom: 32px;
+}
+
+.section-heading {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1677ff;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e8f4fd;
+}
+
+.editable-textarea {
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #333;
+  resize: vertical;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+  min-height: 80px;
+}
+
+.editable-textarea:focus {
+  border-color: #1677ff;
+  box-shadow: 0 0 0 2px rgba(22,119,255,0.1);
+}
+
+/* 对比表 */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.comparison-table th {
+  background: #e8f4fd;
+  color: #1677ff;
+  font-weight: 600;
+  padding: 10px 12px;
+  text-align: center;
+  border: 1px solid #d0e8fb;
+  white-space: nowrap;
+}
+
+.comparison-table td {
+  padding: 9px 12px;
+  border: 1px solid #e8e8e8;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.comparison-table td:first-child {
+  font-weight: 600;
+  color: #555;
+  background: #fafafa;
+  white-space: nowrap;
+  width: 130px;
+}
+
+.comparison-table td input,
+.comparison-table td textarea {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  font-family: inherit;
+  color: #333;
+  outline: none;
+  resize: none;
+  line-height: 1.5;
+}
+
+.comparison-table td textarea {
+  min-height: 52px;
+}
+
+.comparison-table tr:hover td {
+  background-color: #f9fbff;
+}
+
+/* 推荐标签 */
+.recommended-badge {
+  display: inline-block;
+  background: #ff4d4f;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 1px 7px;
+  border-radius: 10px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* 产品分析卡片 */
+.analysis-card {
+  background: #fafbfc;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+
+.analysis-card-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.analysis-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #52c41a;
+  background: #f6ffed;
+  border: 1px solid #b7eb8f;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.analysis-label.attention {
+  color: #fa8c16;
+  background: #fff7e6;
+  border-color: #ffd591;
+}
+
+/* 推荐区块 */
+.recommendation-box {
+  background: linear-gradient(135deg, #e8f4fd 0%, #f0f9ff 100%);
+  border: 1px solid #bae0ff;
+  border-radius: 10px;
+  padding: 16px 20px;
+}
