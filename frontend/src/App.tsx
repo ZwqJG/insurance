@@ -23,15 +23,16 @@ const App: React.FC = () => {
     const shareData = params.get('d')
 
     if (shareData) {
-      // 自包含分享链接（方案数据直接编码在 URL 中）
       setSharedMode(true)
-      try {
-        const result = decodeShareData(shareData)
-        setProposalResult(result)
-        setPage('preview')
-      } catch {
-        setSharedProposalError('分享链接无效或已过期')
-      }
+      ;(async () => {
+        try {
+          const result = await decodeShareData(shareData)
+          setProposalResult(result)
+          setPage('preview')
+        } catch {
+          setSharedProposalError('分享链接无效或已过期')
+        }
+      })()
       return
     }
 
@@ -108,15 +109,17 @@ const App: React.FC = () => {
 
     setSharing(true)
     try {
-      const encoded = encodeShareData(proposalResult)
-      const url = new URL(`/?d=${encoded}`, window.location.origin).toString()
-      setShareUrl(url)
+      const encoded = await encodeShareData(proposalResult)
+      const url = new URL(window.location.origin)
+      url.searchParams.set('d', encoded)
+      const shareLink = url.toString()
+      setShareUrl(shareLink)
       try {
-        await navigator.clipboard.writeText(url)
+        await navigator.clipboard.writeText(shareLink)
         message.success('短链已生成并复制到剪贴板')
       } catch {
         message.success('短链已生成')
-        message.info(`短链：${url}`)
+        message.info(`短链：${shareLink}`)
       }
     } catch (error) {
       const text = error instanceof Error ? error.message : '生成短链失败，请稍后重试'

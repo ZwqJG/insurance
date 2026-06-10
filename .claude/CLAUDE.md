@@ -32,6 +32,7 @@
 7. **依赖管理**：函数所需依赖（如 `zod`、`dayjs`）放在根目录 `package.json`，由 `installCommand` 安装。
 8. **纯函数服务**：`services/productMatch.service.ts` 和 `services/proposalGenerate.service.ts` 保持纯函数，无副作用。
 9. **数据持久化**：**不可使用 `fs.readFile/writeFile`**，Serverless 环境文件系统临时性。MVP 使用内存 Map 存储分享数据（冷启动丢失），后续需升级为数据库或 Blob 存储。
+10. **短链策略**：EdgeOne Pages 上推荐使用前端生成的压缩自包含链接（`/?d=...`），不要把生产可用性建立在内存 Map 短码（`?s=xxx`）上；后者只适合本地开发或临时兼容。
 
 ## edgeone.json 关键配置
 
