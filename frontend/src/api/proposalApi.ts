@@ -38,7 +38,7 @@ export async function createProposalShare(proposalResult: ProposalResult): Promi
 
 export async function fetchSharedProposal(code: string): Promise<SharedProposalRecord> {
   try {
-    const response = await api.get<SharedProposalRecord>(`/proposals/share/${code}`)
+    const response = await api.get<SharedProposalRecord>('/proposals/share', { params: { code } })
     return response.data
   } catch (error) {
     if (axios.isAxiosError(error)) {
