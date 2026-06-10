@@ -1,5 +1,5 @@
-import { getProposalShare } from '../../services/proposalShare.service';
-import { jsonResponse, corsHeaders } from '../../shared/cors';
+import { getProposalShare } from '../../../services/proposalShare.service';
+import { jsonResponse, corsHeaders } from '../../../shared/cors';
 
 export async function onRequestGet(context: {
   request: Request;
