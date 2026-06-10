@@ -1,7 +1,4 @@
 import { randomBytes } from 'node:crypto';
-import { getStore } from '@edgeone/pages-blob';
-
-const store = getStore('proposal-shares');
 
 interface ProposalShareRecord {
   code: string;
@@ -14,6 +11,9 @@ interface ProposalShareResponse {
   share_url: string;
 }
 
+// MVP: 使用内存存储，冷启动后数据会丢失。后续可升级为 Blob 存储或数据库。
+const store = new Map<string, string>();
+
 export async function createProposalShare(proposalResult: any): Promise<ProposalShareResponse> {
   const code = randomBytes(4).toString('base64url');
 
@@ -23,7 +23,7 @@ export async function createProposalShare(proposalResult: any): Promise<Proposal
     proposal_result: proposalResult,
   };
 
-  await store.set(code, JSON.stringify(record));
+  store.set(code, JSON.stringify(record));
 
   return {
     share_code: code,
@@ -32,7 +32,7 @@ export async function createProposalShare(proposalResult: any): Promise<Proposal
 }
 
 export async function getProposalShare(code: string): Promise<ProposalShareRecord | null> {
-  const data = await store.get(code);
+  const data = store.get(code);
   if (!data) return null;
   return JSON.parse(data);
 }
