@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { message } from 'antd'
 import CustomerFormPage from './pages/CustomerFormPage'
 import ProposalPreviewPage from './pages/ProposalPreviewPage'
-import { createProposalShare, fetchSharedProposal, generateProposal } from './api/proposalApi'
+import { encodeShareData, decodeShareData, generateProposal } from './api/proposalApi'
 import { CustomerInput, ProposalResult } from './types/proposal'
 
 type PageState = 'form' | 'preview'
@@ -19,26 +19,45 @@ const App: React.FC = () => {
   const [sharedProposalError, setSharedProposalError] = useState<string | null>(null)
 
   useEffect(() => {
-    const shareCode = new URLSearchParams(window.location.search).get('s')
+    const params = new URLSearchParams(window.location.search)
+    const shareData = params.get('d')
+
+    if (shareData) {
+      // 自包含分享链接（方案数据直接编码在 URL 中）
+      setSharedMode(true)
+      try {
+        const result = decodeShareData(shareData)
+        setProposalResult(result)
+        setPage('preview')
+      } catch {
+        setSharedProposalError('分享链接无效或已过期')
+      }
+      return
+    }
+
+    // 兼容旧的 ?s= 格式（依赖服务端存储，EdgeOne 部署可能不可用）
+    const shareCode = params.get('s')
     if (!shareCode) {
       return
     }
 
     setSharedMode(true)
     setLoadingSharedProposal(true)
-    fetchSharedProposal(shareCode)
-      .then((record) => {
-        setProposalResult(record.proposal_result)
-        setPage('preview')
-      })
-      .catch((error: unknown) => {
-        const text = error instanceof Error ? error.message : '分享链接无效或已失效'
-        setSharedProposalError(text)
-        message.error(text)
-      })
-      .finally(() => {
-        setLoadingSharedProposal(false)
-      })
+    import('./api/proposalApi').then(({ fetchSharedProposal }) =>
+      fetchSharedProposal(shareCode)
+        .then((record) => {
+          setProposalResult(record.proposal_result)
+          setPage('preview')
+        })
+        .catch((error: unknown) => {
+          const text = error instanceof Error ? error.message : '分享链接无效或已失效'
+          setSharedProposalError(text)
+          message.error(text)
+        })
+        .finally(() => {
+          setLoadingSharedProposal(false)
+        })
+    )
   }, [])
 
   const handleProposalGenerated = (result: ProposalResult, input: CustomerInput) => {
@@ -89,15 +108,15 @@ const App: React.FC = () => {
 
     setSharing(true)
     try {
-      const result = await createProposalShare(proposalResult)
-      const absoluteUrl = new URL(result.share_url, window.location.origin).toString()
-      setShareUrl(absoluteUrl)
+      const encoded = encodeShareData(proposalResult)
+      const url = new URL(`/?d=${encoded}`, window.location.origin).toString()
+      setShareUrl(url)
       try {
-        await navigator.clipboard.writeText(absoluteUrl)
+        await navigator.clipboard.writeText(url)
         message.success('短链已生成并复制到剪贴板')
       } catch {
         message.success('短链已生成')
-        message.info(`短链：${absoluteUrl}`)
+        message.info(`短链：${url}`)
       }
     } catch (error) {
       const text = error instanceof Error ? error.message : '生成短链失败，请稍后重试'

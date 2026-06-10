@@ -21,6 +21,26 @@ export async function generateProposal(input: CustomerInput): Promise<ProposalRe
   }
 }
 
+// 客户端编码/解码方案数据到 URL（EdgeOne Pages 无服务端持久化存储）
+export function encodeShareData(data: ProposalResult): string {
+  const json = JSON.stringify(data)
+  const bytes = new TextEncoder().encode(json)
+  let binary = ''
+  bytes.forEach((b) => { binary += String.fromCharCode(b) })
+  return btoa(binary)
+}
+
+export function decodeShareData(encoded: string): ProposalResult {
+  const binary = atob(encoded)
+  const bytes = new Uint8Array(binary.length)
+  for (let i = 0; i < binary.length; i++) {
+    bytes[i] = binary.charCodeAt(i)
+  }
+  const json = new TextDecoder().decode(bytes)
+  return JSON.parse(json)
+}
+
+// 服务端分享 API（EdgeOne 部署时不可用，保留供本地开发或后续升级）
 export async function createProposalShare(proposalResult: ProposalResult): Promise<ProposalShareResult> {
   try {
     const response = await api.post<ProposalShareResult>('/proposals/share', { proposal_result: proposalResult })
