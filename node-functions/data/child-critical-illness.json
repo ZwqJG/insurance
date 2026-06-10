@@ -1,0 +1,475 @@
+[
+  {
+    "product_id": "ci_child_001",
+    "product_name": "妈咪保贝（星礼版2.0）（少儿计划）",
+    "company": "复星联合",
+    "category": "儿童重疾险",
+    "min_age": 0,
+    "max_age": 17,
+    "available_coverage_periods": [
+      "30年",
+      "至70岁",
+      "终身"
+    ],
+    "available_payment_periods": [
+      "10年",
+      "15年",
+      "20年",
+      "30年"
+    ],
+    "premium_examples": [
+      {
+        "age": 0,
+        "gender": "男",
+        "sum_assured": 100000,
+        "payment_period": "10年",
+        "coverage_period": "终身",
+        "annual_premium": 3033
+      },
+      {
+        "age": 0,
+        "gender": "男",
+        "sum_assured": 100000,
+        "payment_period": "20年",
+        "coverage_period": "终身",
+        "annual_premium": 1772.13
+      },
+      {
+        "age": 0,
+        "gender": "女",
+        "sum_assured": 100000,
+        "payment_period": "20年",
+        "coverage_period": "终身",
+        "annual_premium": 1580
+      },
+      {
+        "age": 3,
+        "gender": "男",
+        "sum_assured": 100000,
+        "payment_period": "20年",
+        "coverage_period": "终身",
+        "annual_premium": 1820
+      },
+      {
+        "age": 5,
+        "gender": "男",
+        "sum_assured": 100000,
+        "payment_period": "20年",
+        "coverage_period": "终身",
+        "annual_premium": 1880
+      },
+      {
+        "age": 10,
+        "gender": "男",
+        "sum_assured": 100000,
+        "payment_period": "20年",
+        "coverage_period": "终身",
+        "annual_premium": 2100
+      }
+    ],
+    "critical_illness": {
+      "summary": "120种重疾，首次确诊赔付100%基本保额",
+      "disease_count": 120,
+      "base_payout_percent": 100,
+      "extra_payout": "30周岁前首次确诊重疾，额外给付60%基本保额（1次为限）",
+      "multiple_payout": "第二、第三次再次确诊重疾，给付120%基本保额，间隔期180天"
+    },
+    "moderate_illness": {
+      "summary": "30种中症，赔付60%基本保额，最多2次，不分组",
+      "disease_count": 30,
+      "payout_percent": 60,
+      "times": 2
+    },
+    "mild_illness": {
+      "summary": "45种轻症，赔付30%基本保额，最多4次，不分组，无间隔期",
+      "disease_count": 45,
+      "payout_percent": 30,
+      "times": 4
+    },
+    "child_specific": {
+      "summary": "20种少儿特定疾病额外给付120%基本保额（1次为限）",
+      "strength_level": 5
+    },
+    "rare_disease": {
+      "summary": "10种少儿罕见疾病额外给付200%基本保额（1次为限）",
+      "strength_level": 5
+    },
+    "cancer_multiple": {
+      "summary": "再次确诊恶性肿瘤——重度，给付120%基本保额，最多2次，间隔期180天/365天",
+      "strength_level": 4
+    },
+    "cash_value": {
+      "summary": "约43年回本，长期现金价值表现中等",
+      "payback_year": 43,
+      "strength_level": 3
+    },
+    "waiver": {
+      "summary": "被保人轻/中/重症豁免保费；投保人重/中/轻症/身故/全残豁免保费"
+    },
+    "death_benefit": {
+      "summary": "18周岁前身故给付1.05倍已交保费；18周岁后身故给付100%基本保额"
+    },
+    "tags": [
+      "保障全面",
+      "儿童特疾",
+      "罕见病保障高",
+      "轻中症完整"
+    ]
+  },
+  {
+    "product_id": "ci_child_002",
+    "product_name": "妈咪保贝爱常在少儿重大疾病保险（互联网专属）",
+    "company": "复星联合",
+    "category": "儿童重疾险",
+    "min_age": 0,
+    "max_age": 17,
+    "available_coverage_periods": [
+      "30年",
+      "至70岁",
+      "终身"
+    ],
+    "available_payment_periods": [
+      "10年",
+      "15年",
+      "20年",
+      "29年"
+    ],
+    "premium_examples": [
+      {
+        "age": 0,
+        "gender": "男",
+        "sum_assured": 100000,
+        "payment_period": "10年",
+        "coverage_period": "终身",
+        "annual_premium": 3128
+      },
+      {
+        "age": 0,
+        "gender": "男",
+        "sum_assured": 100000,
+        "payment_period": "20年",
+        "coverage_period": "终身",
+        "annual_premium": 1771.69
+      },
+      {
+        "age": 0,
+        "gender": "女",
+        "sum_assured": 100000,
+        "payment_period": "20年",
+        "coverage_period": "终身",
+        "annual_premium": 1578
+      },
+      {
+        "age": 3,
+        "gender": "男",
+        "sum_assured": 100000,
+        "payment_period": "20年",
+        "coverage_period": "终身",
+        "annual_premium": 1825
+      },
+      {
+        "age": 5,
+        "gender": "男",
+        "sum_assured": 100000,
+        "payment_period": "20年",
+        "coverage_period": "终身",
+        "annual_premium": 1890
+      },
+      {
+        "age": 10,
+        "gender": "男",
+        "sum_assured": 100000,
+        "payment_period": "20年",
+        "coverage_period": "终身",
+        "annual_premium": 2130
+      }
+    ],
+    "critical_illness": {
+      "summary": "135种重疾，首次确诊赔付100%基本保额",
+      "disease_count": 135,
+      "base_payout_percent": 100,
+      "extra_payout": "【可选】60周岁前确诊重疾，额外给付100%基本保额（1次为限）",
+      "multiple_payout": "【可选】再次确诊重疾依次给付120%/140%/160%，最多3次，间隔期180天/365天"
+    },
+    "moderate_illness": {
+      "summary": "30种中症，赔付60%基本保额，与轻症累计最多6次，不分组，无间隔期",
+      "disease_count": 30,
+      "payout_percent": 60,
+      "times": 6
+    },
+    "mild_illness": {
+      "summary": "50种轻症，赔付30%基本保额，与中症累计最多6次，不分组，无间隔期",
+      "disease_count": 50,
+      "payout_percent": 30,
+      "times": 6
+    },
+    "child_specific": {
+      "summary": "20种少儿特定疾病额外给付100%基本保额；【可选】再次确诊特定疾病，最多2次",
+      "strength_level": 4
+    },
+    "rare_disease": {
+      "summary": "20种少儿罕见疾病额外给付200%基本保额；【可选】再次确诊罕见疾病，最多2次",
+      "strength_level": 5
+    },
+    "cancer_multiple": {
+      "summary": "【可选】确诊恶性肿瘤——重度依次给付40%/50%/30%，最多3次，间隔期180天/365天",
+      "strength_level": 5
+    },
+    "cash_value": {
+      "summary": "约41年回本，长期现金价值表现中等",
+      "payback_year": 41,
+      "strength_level": 3
+    },
+    "waiver": {
+      "summary": "被保人轻/中/重症豁免保费；投保人轻/中/重症/身故/全残豁免保费"
+    },
+    "death_benefit": {
+      "summary": "【可选】18周岁前身故给付已交保费；18周岁后身故给付100%基本保额"
+    },
+    "tags": [
+      "保障全面",
+      "癌症多次赔付",
+      "轻中症次数多",
+      "罕见病保障高"
+    ]
+  },
+  {
+    "product_id": "ci_child_003",
+    "product_name": "北京人寿大黄蜂15号少儿重疾险（全能版）（互联网专属）",
+    "company": "北京人寿",
+    "category": "儿童重疾险",
+    "min_age": 0,
+    "max_age": 17,
+    "available_coverage_periods": [
+      "30年",
+      "终身"
+    ],
+    "available_payment_periods": [
+      "10年",
+      "15年",
+      "20年",
+      "30年",
+      "35年"
+    ],
+    "premium_examples": [
+      {
+        "age": 0,
+        "gender": "男",
+        "sum_assured": 100000,
+        "payment_period": "10年",
+        "coverage_period": "终身",
+        "annual_premium": 2954
+      },
+      {
+        "age": 0,
+        "gender": "男",
+        "sum_assured": 100000,
+        "payment_period": "20年",
+        "coverage_period": "终身",
+        "annual_premium": 1680.83
+      },
+      {
+        "age": 0,
+        "gender": "女",
+        "sum_assured": 100000,
+        "payment_period": "20年",
+        "coverage_period": "终身",
+        "annual_premium": 1510
+      },
+      {
+        "age": 3,
+        "gender": "男",
+        "sum_assured": 100000,
+        "payment_period": "20年",
+        "coverage_period": "终身",
+        "annual_premium": 1730
+      },
+      {
+        "age": 5,
+        "gender": "男",
+        "sum_assured": 100000,
+        "payment_period": "20年",
+        "coverage_period": "终身",
+        "annual_premium": 1800
+      },
+      {
+        "age": 10,
+        "gender": "男",
+        "sum_assured": 100000,
+        "payment_period": "20年",
+        "coverage_period": "终身",
+        "annual_premium": 2020
+      }
+    ],
+    "critical_illness": {
+      "summary": "125种重疾，首次确诊赔付100%基本保额",
+      "disease_count": 125,
+      "base_payout_percent": 100,
+      "extra_payout": "60周岁前确诊重疾额外给付100%基本保额（1次为限）",
+      "multiple_payout": "【可选】再次确诊重疾依次给付120%/140%/160%，最多3次，间隔期180天/1年"
+    },
+    "moderate_illness": {
+      "summary": "30种中症，赔付60%基本保额，与轻症累计最多6次，不分组，无间隔期",
+      "disease_count": 30,
+      "payout_percent": 60,
+      "times": 6
+    },
+    "mild_illness": {
+      "summary": "43种轻症，赔付30%基本保额，与中症累计最多6次，不分组，无间隔期",
+      "disease_count": 43,
+      "payout_percent": 30,
+      "times": 6
+    },
+    "child_specific": {
+      "summary": "20种特定疾病额外给付120%；13种特定意外重度疾病给付20%；支持少儿重度自闭症、严重抑郁症保障",
+      "strength_level": 5
+    },
+    "rare_disease": {
+      "summary": "20种罕见疾病额外给付200%；【可选】再次确诊罕见疾病，最多4次",
+      "strength_level": 5
+    },
+    "cancer_multiple": {
+      "summary": "【可选】重疾后确诊恶性肿瘤——重度依次给付40%/50%/30%，此后每3年给付50%，次数不限",
+      "strength_level": 5
+    },
+    "cash_value": {
+      "summary": "约43年回本，长期现金价值表现中等",
+      "payback_year": 43,
+      "strength_level": 3
+    },
+    "waiver": {
+      "summary": "被保人轻/中/重症豁免保费；投保人重大疾病/轻度/中度/身故/高残豁免余期保费"
+    },
+    "death_benefit": {
+      "summary": "【可选】18周岁前身故给付已交保费与现价较大者；18周岁后身故给付100%基本保额"
+    },
+    "tags": [
+      "保费便宜",
+      "癌症多次赔付",
+      "儿童特疾",
+      "特定意外保障"
+    ]
+  },
+  {
+    "product_id": "ci_child_004",
+    "product_name": "陆家嘴国泰泰保贝 A 款少儿重大疾病保险",
+    "company": "陆家嘴国泰人寿保险有限责任公司",
+    "category": "儿童重疾险",
+    "min_age": 0,
+    "max_age": 17,
+    "available_coverage_periods": [
+      "终身"
+    ],
+    "available_payment_periods": [],
+    "premium_examples": [],
+    "critical_illness": {
+      "summary": "108种重疾，赔付1次，给付基本保额与现金价值的较大者",
+      "disease_count": 108,
+      "base_payout_percent": 100,
+      "extra_payout": "表格未提供额外重疾赔付信息",
+      "multiple_payout": "表格未提供重疾多次赔付信息"
+    },
+    "moderate_illness": {
+      "summary": "20种中症，不分组赔付2次，每次60%基本保额",
+      "disease_count": 20,
+      "payout_percent": 60,
+      "times": 2
+    },
+    "mild_illness": {
+      "summary": "35种轻症，不分组赔付3次，每次30%基本保额",
+      "disease_count": 35,
+      "payout_percent": 30,
+      "times": 3
+    },
+    "child_specific": {
+      "summary": "25种特定重疾额外给付100%基本保额（限25周岁前）",
+      "strength_level": 5
+    },
+    "rare_disease": {
+      "summary": "10种罕见重疾额外给付200%基本保额（限25周岁前）",
+      "strength_level": 5
+    },
+    "cancer_multiple": {
+      "summary": "表格未提供癌症多次赔付信息",
+      "strength_level": 0
+    },
+    "cash_value": {
+      "summary": "重疾给付与现金价值取较大者，具备现金价值属性",
+      "payback_year": 99,
+      "strength_level": 4
+    },
+    "waiver": {
+      "summary": "被保险人中症、轻症或原位癌豁免后续保费；不含投保人豁免"
+    },
+    "death_benefit": {
+      "summary": "表格未提供身故/全残责任信息"
+    },
+    "tags": [
+      "保费便宜",
+      "儿童特疾",
+      "原位癌豁免",
+      "疾病陪护金"
+    ]
+  },
+  {
+    "product_id": "ci_child_005",
+    "product_name": "陆家嘴国泰泰保贝 B 款少儿重大疾病保险",
+    "company": "陆家嘴国泰人寿保险有限责任公司",
+    "category": "儿童重疾险",
+    "min_age": 0,
+    "max_age": 17,
+    "available_coverage_periods": [
+      "终身"
+    ],
+    "available_payment_periods": [],
+    "premium_examples": [],
+    "critical_illness": {
+      "summary": "108种重疾，赔付1次，给付基本保额与现金价值的较大者",
+      "disease_count": 108,
+      "base_payout_percent": 100,
+      "extra_payout": "表格未提供额外重疾赔付信息",
+      "multiple_payout": "表格未提供重疾多次赔付信息"
+    },
+    "moderate_illness": {
+      "summary": "20种中症，不分组赔付2次，每次60%基本保额",
+      "disease_count": 20,
+      "payout_percent": 60,
+      "times": 2
+    },
+    "mild_illness": {
+      "summary": "35种轻症，不分组赔付3次，每次30%基本保额",
+      "disease_count": 35,
+      "payout_percent": 30,
+      "times": 3
+    },
+    "child_specific": {
+      "summary": "25种特定重疾额外给付100%基本保额（限25周岁前）",
+      "strength_level": 5
+    },
+    "rare_disease": {
+      "summary": "10种罕见重疾额外给付200%基本保额（限25周岁前）",
+      "strength_level": 5
+    },
+    "cancer_multiple": {
+      "summary": "表格未提供癌症多次赔付信息",
+      "strength_level": 0
+    },
+    "cash_value": {
+      "summary": "重疾给付与现金价值取较大者，具备现金价值属性",
+      "payback_year": 99,
+      "strength_level": 4
+    },
+    "waiver": {
+      "summary": "被保险人中症、轻症 or 原位癌豁免后续保费；不含投保人豁免"
+    },
+    "death_benefit": {
+      "summary": "表格未提供身故/全残责任信息"
+    },
+    "tags": [
+      "保费便宜",
+      "儿童特疾",
+      "原位癌豁免",
+      "疾病陪护金"
+    ]
+  }
+]

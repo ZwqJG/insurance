@@ -1,0 +1,8 @@
+{
+  "name": "insurance-proposal-mvp",
+  "private": true,
+  "dependencies": {
+    "zod": "^3.22.4",
+    "dayjs": "^1.11.10"
+  }
+}
