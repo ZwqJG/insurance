@@ -1,0 +1,1000 @@
+[
+  {
+    "product_id": "mh_med_001",
+    "product_name": "平安 e 生安心 2.0",
+    "company": "平安健康保险",
+    "service_provider": "平安健康保险",
+    "category": "中高端医疗险",
+    "tier": "中端医疗",
+    "positioning": "基础中端医疗",
+    "price_level": {
+      "level": "低",
+      "child_reference": 800,
+      "adult_30_reference": 1200,
+      "adult_40_reference": 1800,
+      "adult_50_reference": 3000
+    },
+    "min_age_days": 28,
+    "max_initial_age": 65,
+    "max_renewal_age": 99,
+    "child_standalone": true,
+    "family_discount": "待补充",
+    "regions": ["中国大陆"],
+    "hospital_network": {
+      "public_general": true,
+      "special_need": true,
+      "international_department": false,
+      "vip_department": true,
+      "private_hospital": false,
+      "expensive_hospital": false,
+      "summary": "二级及以上公立医院、指定扩展医院普通部/特需部/VIP部可选"
+    },
+    "direct_billing": {
+      "inpatient": true,
+      "outpatient": false,
+      "hospital_count": 0,
+      "summary": "住院直结、垫付"
+    },
+    "annual_limit": 4000000,
+    "deductible_options": [0, 15000, 30000],
+    "deductible": {
+      "medical_insurance_offset": true,
+      "all_departments_apply": true,
+      "cancer_zero_deductible": "无"
+    },
+    "outpatient": {
+      "included": true,
+      "optional": true,
+      "direct_billing": false,
+      "summary": "门诊可选"
+    },
+    "inpatient": {
+      "included": true,
+      "room_limit": "标准单人病房",
+      "allowance": "无",
+      "rehabilitation": "待补充",
+      "durable_medical_equipment": "待补充",
+      "reconstructive_surgery": "待补充"
+    },
+    "drug_device": {
+      "out_of_hospital_drug": "普通部101万，特需部400万",
+      "cancer_special_drug": "院外抗癌特药400万",
+      "device_limit": "待补充",
+      "proton_heavy_ion": "400万"
+    },
+    "pre_existing_condition": {
+      "support_level": 1,
+      "summary": "除外责任，健康体可投",
+      "waiting_period": "30天",
+      "first_year_limit": 0
+    },
+    "overseas_medical": {
+      "support_level": 1,
+      "summary": "不支持海外就医"
+    },
+    "value_added_services": ["绿通", "垫付", "特药服务"],
+    "underwriting": {
+      "mode": "健康告知/智能核保",
+      "attention": "正式投保前需核对健康告知"
+    },
+    "tags": ["预算可控", "特需/国际部", "儿童单独投保"],
+    "suitable_crowd": "预算敏感、主要看大陆公立特需/VIP、儿童单独投保",
+    "notes": "基础中端医疗险，适合预算有限但需要特需/VIP就医资源的客户"
+  },
+  {
+    "product_id": "mh_med_002",
+    "product_name": "平安 e 生安心易保版 2.0",
+    "company": "平安健康保险",
+    "service_provider": "平安健康保险",
+    "category": "中高端医疗险",
+    "tier": "中端医疗",
+    "positioning": "宽核保中端医疗",
+    "price_level": {
+      "level": "低",
+      "child_reference": 600,
+      "adult_30_reference": 900,
+      "adult_40_reference": 1500,
+      "adult_50_reference": 2500
+    },
+    "min_age_days": 28,
+    "max_initial_age": 65,
+    "max_renewal_age": 99,
+    "child_standalone": true,
+    "family_discount": "待补充",
+    "regions": ["中国大陆"],
+    "hospital_network": {
+      "public_general": true,
+      "special_need": true,
+      "international_department": false,
+      "vip_department": true,
+      "private_hospital": false,
+      "expensive_hospital": false,
+      "summary": "二级及以上公立医院、指定扩展医院普通部/特需部/VIP部可选"
+    },
+    "direct_billing": {
+      "inpatient": true,
+      "outpatient": false,
+      "hospital_count": 0,
+      "summary": "住院直结、垫付"
+    },
+    "annual_limit": 6000000,
+    "deductible_options": [20000],
+    "deductible": {
+      "medical_insurance_offset": true,
+      "all_departments_apply": true,
+      "cancer_zero_deductible": "无"
+    },
+    "outpatient": {
+      "included": false,
+      "optional": false,
+      "direct_billing": false,
+      "summary": "不含门诊"
+    },
+    "inpatient": {
+      "included": true,
+      "room_limit": "标准单人病房",
+      "allowance": "无",
+      "rehabilitation": "待补充",
+      "durable_medical_equipment": "待补充",
+      "reconstructive_surgery": "待补充"
+    },
+    "drug_device": {
+      "out_of_hospital_drug": "外购药100万",
+      "cancer_special_drug": "院外抗癌特药300万",
+      "device_limit": "待补充",
+      "proton_heavy_ion": "600万"
+    },
+    "pre_existing_condition": {
+      "support_level": 3,
+      "summary": "宽核保，结节/高血压等轻微异常可投",
+      "waiting_period": "30天",
+      "first_year_limit": 0
+    },
+    "overseas_medical": {
+      "support_level": 1,
+      "summary": "不支持海外就医"
+    },
+    "value_added_services": ["绿通", "垫付", "特药服务"],
+    "underwriting": {
+      "mode": "宽核保/健康告知",
+      "attention": "轻微健康异常可尝试投保"
+    },
+    "tags": ["预算可控", "既往症友好", "特需/国际部"],
+    "suitable_crowd": "有轻微健康异常、能接受2万免赔额",
+    "notes": "宽核保中端医疗险，适合有结节/高血压等轻微健康异常但希望配置中端医疗的客户"
+  },
+  {
+    "product_id": "mh_med_003",
+    "product_name": "平安双子星 2026 旗舰版",
+    "company": "平安健康保险",
+    "service_provider": "平安健康保险",
+    "category": "中高端医疗险",
+    "tier": "中端医疗",
+    "positioning": "0免赔中高端",
+    "price_level": {
+      "level": "中",
+      "child_reference": 1500,
+      "adult_30_reference": 2500,
+      "adult_40_reference": 3500,
+      "adult_50_reference": 5500
+    },
+    "min_age_days": 28,
+    "max_initial_age": 55,
+    "max_renewal_age": 99,
+    "child_standalone": true,
+    "family_discount": "待补充",
+    "regions": ["中国大陆"],
+    "hospital_network": {
+      "public_general": true,
+      "special_need": true,
+      "international_department": true,
+      "vip_department": true,
+      "private_hospital": false,
+      "expensive_hospital": false,
+      "summary": "二级及以上公立医院普通部/特需部/VIP部/国际部或国际医疗中心及约定医院"
+    },
+    "direct_billing": {
+      "inpatient": true,
+      "outpatient": false,
+      "hospital_count": 0,
+      "summary": "住院直结、垫付"
+    },
+    "annual_limit": 6000000,
+    "deductible_options": [0],
+    "deductible": {
+      "medical_insurance_offset": true,
+      "all_departments_apply": true,
+      "cancer_zero_deductible": "0免赔"
+    },
+    "outpatient": {
+      "included": false,
+      "optional": false,
+      "direct_billing": false,
+      "summary": "不含门诊"
+    },
+    "inpatient": {
+      "included": true,
+      "room_limit": "标准单人病房",
+      "allowance": "无",
+      "rehabilitation": "待补充",
+      "durable_medical_equipment": "待补充",
+      "reconstructive_surgery": "待补充"
+    },
+    "drug_device": {
+      "out_of_hospital_drug": "外购药和器械600万",
+      "cancer_special_drug": "院外抗癌特药600万",
+      "device_limit": "待补充",
+      "proton_heavy_ion": "600万"
+    },
+    "pre_existing_condition": {
+      "support_level": 1,
+      "summary": "除外责任，健康体可投",
+      "waiting_period": "30天",
+      "first_year_limit": 0
+    },
+    "overseas_medical": {
+      "support_level": 1,
+      "summary": "不支持海外就医"
+    },
+    "value_added_services": ["绿通", "垫付", "特药服务"],
+    "underwriting": {
+      "mode": "健康告知/智能核保",
+      "attention": "正式投保前需核对健康告知"
+    },
+    "tags": ["0免赔/低免赔", "特需/国际部", "外购药/特药"],
+    "suitable_crowd": "想要0免赔、重视大陆中高端医院和特药",
+    "notes": "0免赔中高端医疗险，外购药和质子重离子额度均高达600万"
+  },
+  {
+    "product_id": "mh_med_004",
+    "product_name": "平安医享高端医疗臻选版 2.0",
+    "company": "平安健康保险",
+    "service_provider": "平安健康保险",
+    "category": "中高端医疗险",
+    "tier": "高端医疗",
+    "positioning": "全面高端医疗",
+    "price_level": {
+      "level": "高",
+      "child_reference": 3000,
+      "adult_30_reference": 6000,
+      "adult_40_reference": 9000,
+      "adult_50_reference": 15000
+    },
+    "min_age_days": 28,
+    "max_initial_age": 65,
+    "max_renewal_age": 99,
+    "child_standalone": false,
+    "family_discount": "待补充",
+    "regions": ["中国大陆", "港澳台", "全球除美加", "全球"],
+    "hospital_network": {
+      "public_general": true,
+      "special_need": true,
+      "international_department": true,
+      "vip_department": true,
+      "private_hospital": true,
+      "expensive_hospital": true,
+      "summary": "公立普通部/特需部/国际部/VIP部、一般私立医院，昂贵医院可选"
+    },
+    "direct_billing": {
+      "inpatient": true,
+      "outpatient": true,
+      "hospital_count": 0,
+      "summary": "门诊+住院直结、垫付"
+    },
+    "annual_limit": 8000000,
+    "deductible_options": [0, 10000],
+    "deductible": {
+      "medical_insurance_offset": true,
+      "all_departments_apply": true,
+      "cancer_zero_deductible": "无"
+    },
+    "outpatient": {
+      "included": true,
+      "optional": true,
+      "direct_billing": true,
+      "summary": "可选门诊，支持直付"
+    },
+    "inpatient": {
+      "included": true,
+      "room_limit": "标准单人病房",
+      "allowance": "无",
+      "rehabilitation": "待补充",
+      "durable_medical_equipment": "待补充",
+      "reconstructive_surgery": "待补充"
+    },
+    "drug_device": {
+      "out_of_hospital_drug": "外购药和器械400万/800万",
+      "cancer_special_drug": "待补充",
+      "device_limit": "待补充",
+      "proton_heavy_ion": "800万"
+    },
+    "pre_existing_condition": {
+      "support_level": 1,
+      "summary": "除外责任，健康体可投",
+      "waiting_period": "30天",
+      "first_year_limit": 0
+    },
+    "overseas_medical": {
+      "support_level": 4,
+      "summary": "支持港澳台及全球就医（按所选方案）"
+    },
+    "value_added_services": ["绿通", "二诊", "陪诊", "直付", "海外就医"],
+    "underwriting": {
+      "mode": "健康告知/人工核保",
+      "attention": "正式投保前需核对健康告知和核保材料"
+    },
+    "tags": ["门诊直付", "私立医院", "海外/港澳台就医", "0免赔/低免赔"],
+    "suitable_crowd": "需要港澳台/海外、门诊直付、私立医院或更高端医疗网络",
+    "notes": "高端医疗代表产品，保障区域灵活可选，适合追求就医自由度和服务体验的客户"
+  },
+  {
+    "product_id": "mh_med_005",
+    "product_name": "平安医享高端医疗易保版",
+    "company": "平安健康保险",
+    "service_provider": "平安健康保险",
+    "category": "中高端医疗险",
+    "tier": "高端医疗",
+    "positioning": "宽核保高端医疗",
+    "price_level": {
+      "level": "中",
+      "child_reference": 2000,
+      "adult_30_reference": 3500,
+      "adult_40_reference": 5500,
+      "adult_50_reference": 9000
+    },
+    "min_age_days": 28,
+    "max_initial_age": 65,
+    "max_renewal_age": 99,
+    "child_standalone": false,
+    "family_discount": "待补充",
+    "regions": ["中国大陆"],
+    "hospital_network": {
+      "public_general": true,
+      "special_need": true,
+      "international_department": true,
+      "vip_department": true,
+      "private_hospital": true,
+      "expensive_hospital": false,
+      "summary": "二级及以上公立医院普通部/特需部/VIP部/国际部或国际医疗中心、合同约定医院"
+    },
+    "direct_billing": {
+      "inpatient": true,
+      "outpatient": false,
+      "hospital_count": 0,
+      "summary": "住院直结、垫付"
+    },
+    "annual_limit": 8000000,
+    "deductible_options": [20000],
+    "deductible": {
+      "medical_insurance_offset": true,
+      "all_departments_apply": true,
+      "cancer_zero_deductible": "无"
+    },
+    "outpatient": {
+      "included": false,
+      "optional": false,
+      "direct_billing": false,
+      "summary": "不含门诊"
+    },
+    "inpatient": {
+      "included": true,
+      "room_limit": "标准单人病房",
+      "allowance": "无",
+      "rehabilitation": "待补充",
+      "durable_medical_equipment": "待补充",
+      "reconstructive_surgery": "待补充"
+    },
+    "drug_device": {
+      "out_of_hospital_drug": "外购药和指定器械200万",
+      "cancer_special_drug": "待补充",
+      "device_limit": "指定器械200万",
+      "proton_heavy_ion": "800万"
+    },
+    "pre_existing_condition": {
+      "support_level": 3,
+      "summary": "宽核保，结节/高血压等轻微异常可投",
+      "waiting_period": "30天",
+      "first_year_limit": 0
+    },
+    "overseas_medical": {
+      "support_level": 1,
+      "summary": "不支持海外就医"
+    },
+    "value_added_services": ["绿通", "垫付", "特药服务"],
+    "underwriting": {
+      "mode": "宽核保/健康告知",
+      "attention": "轻微健康异常可尝试投保"
+    },
+    "tags": ["既往症友好", "特需/国际部", "私立医院"],
+    "suitable_crowd": "有健康异常但仍想配置高端医院资源",
+    "notes": "宽核保高端医疗险，适合有健康异常但希望享受高端医疗网络的客户"
+  },
+  {
+    "product_id": "mh_med_006",
+    "product_name": "MSH 欣享人生 2026",
+    "company": "大地保险",
+    "service_provider": "MSH 万欣和",
+    "category": "中高端医疗险",
+    "tier": "高端医疗",
+    "positioning": "既往症友好高端医疗",
+    "price_level": {
+      "level": "中",
+      "child_reference": 2500,
+      "adult_30_reference": 4000,
+      "adult_40_reference": 6500,
+      "adult_50_reference": 11000
+    },
+    "min_age_days": 30,
+    "max_initial_age": 64,
+    "max_renewal_age": 99,
+    "child_standalone": false,
+    "family_discount": "待补充",
+    "regions": ["中国大陆"],
+    "hospital_network": {
+      "public_general": true,
+      "special_need": true,
+      "international_department": true,
+      "vip_department": true,
+      "private_hospital": true,
+      "expensive_hospital": false,
+      "summary": "公立普通/特需/国际/VIP + 指定私立，含一级公立医院"
+    },
+    "direct_billing": {
+      "inpatient": true,
+      "outpatient": true,
+      "hospital_count": 385,
+      "summary": "住院和门急诊支持全额垫付/直付"
+    },
+    "annual_limit": 8000000,
+    "deductible_options": [0, 10000, 20000],
+    "deductible": {
+      "medical_insurance_offset": true,
+      "all_departments_apply": true,
+      "cancer_zero_deductible": "第2年起癌症0免赔"
+    },
+    "outpatient": {
+      "included": true,
+      "optional": false,
+      "direct_billing": true,
+      "summary": "门急诊全额垫付"
+    },
+    "inpatient": {
+      "included": true,
+      "room_limit": "3000元/天",
+      "allowance": "重疾300元/天，公立普通住院300元/天",
+      "rehabilitation": "住院不限，出院后限30天",
+      "durable_medical_equipment": "全额赔付",
+      "reconstructive_surgery": "全额赔付，不限额"
+    },
+    "drug_device": {
+      "out_of_hospital_drug": "不限清单",
+      "cancer_special_drug": "不限清单",
+      "device_limit": "不限清单",
+      "proton_heavy_ion": "全额赔付"
+    },
+    "pre_existing_condition": {
+      "support_level": 5,
+      "summary": "投保既往症定版并审核通过，第1年5000元，每年递增5000元，第4年起全额理赔",
+      "waiting_period": "以核保结论为准",
+      "first_year_limit": 5000
+    },
+    "overseas_medical": {
+      "support_level": 4,
+      "summary": "患癌可赴香港、日本、新加坡治疗，可用国内未上市新药"
+    },
+    "value_added_services": ["绿通", "二诊", "陪诊", "慢病送药", "心理援助", "海外肿瘤治疗"],
+    "underwriting": {
+      "mode": "人工核保/健康告知",
+      "attention": "正式投保前需核对健康告知和核保材料"
+    },
+    "maternity": {
+      "available": false,
+      "summary": "不含生育责任"
+    },
+    "tags": ["既往症友好", "门诊直付", "外购药/特药", "海外/港澳台就医"],
+    "suitable_crowd": "有明确既往症且希望未来能赔、关注海外肿瘤治疗的客户",
+    "notes": "既往症友好型高端医疗，既往症首年5000元限额逐年递增。患癌可赴海外治疗"
+  },
+  {
+    "product_id": "mh_med_007",
+    "product_name": "众安尊享 e 生中高端 PLUS 2025",
+    "company": "众安保险",
+    "service_provider": "柏盛健康",
+    "category": "中高端医疗险",
+    "tier": "高端医疗",
+    "positioning": "宽核保中高端医疗",
+    "price_level": {
+      "level": "中",
+      "child_reference": 2000,
+      "adult_30_reference": 3500,
+      "adult_40_reference": 5500,
+      "adult_50_reference": 9000
+    },
+    "min_age_days": 30,
+    "max_initial_age": 70,
+    "max_renewal_age": 105,
+    "child_standalone": false,
+    "family_discount": "可家庭共享免赔",
+    "regions": ["中国大陆"],
+    "hospital_network": {
+      "public_general": true,
+      "special_need": true,
+      "international_department": true,
+      "vip_department": true,
+      "private_hospital": true,
+      "expensive_hospital": false,
+      "summary": "二级以上医院普通/特需/国际/VIP + 指定私立，不限制昂贵医院"
+    },
+    "direct_billing": {
+      "inpatient": true,
+      "outpatient": true,
+      "hospital_count": 356,
+      "summary": "住院和门急诊支持全额垫付/直付"
+    },
+    "annual_limit": 8000000,
+    "deductible_options": [0, 15000, 30000],
+    "deductible": {
+      "medical_insurance_offset": true,
+      "all_departments_apply": true,
+      "cancer_zero_deductible": "无"
+    },
+    "outpatient": {
+      "included": true,
+      "optional": false,
+      "direct_billing": true,
+      "summary": "门急诊全额垫付"
+    },
+    "inpatient": {
+      "included": true,
+      "room_limit": "不限额",
+      "allowance": "重疾津贴800元/天",
+      "rehabilitation": "待补充",
+      "durable_medical_equipment": "待补充",
+      "reconstructive_surgery": "待补充"
+    },
+    "drug_device": {
+      "out_of_hospital_drug": "不限清单",
+      "cancer_special_drug": "不限清单，含海南博鳌未上市药",
+      "device_limit": "不限清单",
+      "proton_heavy_ion": "全额赔付"
+    },
+    "pre_existing_condition": {
+      "support_level": 4,
+      "summary": "部分疾病3年内可核保复议，3年后既往症可保可赔",
+      "waiting_period": "以核保结论为准",
+      "first_year_limit": 0
+    },
+    "overseas_medical": {
+      "support_level": 5,
+      "summary": "全球紧急医疗；28种重疾可赴港/日/美治疗，费用直付"
+    },
+    "value_added_services": ["绿通", "二诊", "陪诊", "全球紧急医疗", "重疾海外就医"],
+    "underwriting": {
+      "mode": "宽核保/健康告知",
+      "attention": "部分疾病3年内可核保复议"
+    },
+    "tags": ["既往症友好", "门诊直付", "外购药/特药", "海外/港澳台就医"],
+    "suitable_crowd": "有既往症或关注海外重疾治疗、博鳌未上市药的客户",
+    "notes": "宽核保中高端医疗，既往症3年后可保可赔，28种重疾可海外直付治疗"
+  },
+  {
+    "product_id": "mh_med_008",
+    "product_name": "安盛智选无忧",
+    "company": "安盛天平",
+    "service_provider": "中间带",
+    "category": "中高端医疗险",
+    "tier": "高端医疗",
+    "positioning": "直付网络强中高端",
+    "price_level": {
+      "level": "中",
+      "child_reference": 2200,
+      "adult_30_reference": 3800,
+      "adult_40_reference": 6000,
+      "adult_50_reference": 10000
+    },
+    "min_age_days": 30,
+    "max_initial_age": 45,
+    "max_renewal_age": 99,
+    "child_standalone": false,
+    "family_discount": "待补充",
+    "regions": ["中国大陆"],
+    "hospital_network": {
+      "public_general": true,
+      "special_need": true,
+      "international_department": true,
+      "vip_department": true,
+      "private_hospital": true,
+      "expensive_hospital": false,
+      "summary": "二级以上公立普通/特需/国际/VIP + 指定私立"
+    },
+    "direct_billing": {
+      "inpatient": true,
+      "outpatient": true,
+      "hospital_count": 1100,
+      "summary": "直付网络超1100家，住院+门急诊全额垫付"
+    },
+    "annual_limit": 8000000,
+    "deductible_options": [0, 15000],
+    "deductible": {
+      "medical_insurance_offset": true,
+      "all_departments_apply": true,
+      "cancer_zero_deductible": "无"
+    },
+    "outpatient": {
+      "included": true,
+      "optional": false,
+      "direct_billing": true,
+      "summary": "门急诊全额垫付"
+    },
+    "inpatient": {
+      "included": true,
+      "room_limit": "不限额",
+      "allowance": "公立普通部住院津贴500元/天",
+      "rehabilitation": "待补充",
+      "durable_medical_equipment": "待补充",
+      "reconstructive_surgery": "待补充"
+    },
+    "drug_device": {
+      "out_of_hospital_drug": "不限清单",
+      "cancer_special_drug": "不限清单",
+      "device_limit": "不限清单",
+      "proton_heavy_ion": "全额赔付"
+    },
+    "pre_existing_condition": {
+      "support_level": 4,
+      "summary": "投保前5年无记录既往症，首年即可理赔；5年内有记录，3年后可理赔",
+      "waiting_period": "以核保结论为准",
+      "first_year_limit": 0
+    },
+    "overseas_medical": {
+      "support_level": 3,
+      "summary": "全球紧急医疗；重疾异地交通住宿增值服务"
+    },
+    "value_added_services": ["绿通", "二诊", "陪诊", "全球紧急医疗", "直付网络"],
+    "underwriting": {
+      "mode": "人工核保/健康告知",
+      "attention": "正式投保前需核对健康告知和核保材料"
+    },
+    "tags": ["门诊直付", "既往症友好", "外购药/特药", "0免赔/低免赔"],
+    "suitable_crowd": "重视直付医院数量和服务体验的客户",
+    "notes": "直付网络最强（1100+家），适合经常就医、注重少垫钱体验的客户"
+  },
+  {
+    "product_id": "mh_med_009",
+    "product_name": "安盛馨选无忧",
+    "company": "安盛天平",
+    "service_provider": "中间带",
+    "category": "中高端医疗险",
+    "tier": "中端医疗",
+    "positioning": "基础宽核保中端",
+    "price_level": {
+      "level": "低",
+      "child_reference": 1000,
+      "adult_30_reference": 1500,
+      "adult_40_reference": 2500,
+      "adult_50_reference": 4000
+    },
+    "min_age_days": 30,
+    "max_initial_age": 45,
+    "max_renewal_age": 105,
+    "child_standalone": false,
+    "family_discount": "待补充",
+    "regions": ["中国大陆"],
+    "hospital_network": {
+      "public_general": true,
+      "special_need": true,
+      "international_department": true,
+      "vip_department": true,
+      "private_hospital": true,
+      "expensive_hospital": false,
+      "summary": "二级以上公立普通/特需/国际/VIP + 指定私立"
+    },
+    "direct_billing": {
+      "inpatient": true,
+      "outpatient": false,
+      "hospital_count": 0,
+      "summary": "无直付，住院全额垫付"
+    },
+    "annual_limit": 3000000,
+    "deductible_options": [0, 5000, 10000, 15000, 20000],
+    "deductible": {
+      "medical_insurance_offset": false,
+      "all_departments_apply": true,
+      "cancer_zero_deductible": "无"
+    },
+    "outpatient": {
+      "included": true,
+      "optional": false,
+      "direct_billing": false,
+      "summary": "门急诊全额垫付但门诊手术麻醉有限制"
+    },
+    "inpatient": {
+      "included": true,
+      "room_limit": "2500元/天",
+      "allowance": "无",
+      "rehabilitation": "待补充",
+      "durable_medical_equipment": "待补充",
+      "reconstructive_surgery": "待补充"
+    },
+    "drug_device": {
+      "out_of_hospital_drug": "住院外购药自由",
+      "cancer_special_drug": "院外肿瘤特药/器械有清单限制",
+      "device_limit": "有清单限制",
+      "proton_heavy_ion": "待补充"
+    },
+    "pre_existing_condition": {
+      "support_level": 4,
+      "summary": "投保前5年无记录既往症，首年即可理赔；5年内有记录，3年后可理赔",
+      "waiting_period": "以核保结论为准",
+      "first_year_limit": 0
+    },
+    "overseas_medical": {
+      "support_level": 1,
+      "summary": "不支持海外就医"
+    },
+    "value_added_services": ["绿通", "垫付"],
+    "underwriting": {
+      "mode": "宽核保/健康告知",
+      "attention": "价格和投保宽松度更友好，但服务体验弱于智选无忧"
+    },
+    "tags": ["预算可控", "既往症友好"],
+    "suitable_crowd": "预算或承保宽松需求优先的客户",
+    "notes": "基础宽核保中端，价格和投保宽松度友好，但服务体验弱于安盛智选无忧"
+  },
+  {
+    "product_id": "mh_med_010",
+    "product_name": "2023 版欣享人生",
+    "company": "大地保险",
+    "service_provider": "MSH 万欣和",
+    "category": "中高端医疗险",
+    "tier": "高端医疗",
+    "positioning": "基础版高端医疗",
+    "price_level": {
+      "level": "中",
+      "child_reference": 2000,
+      "adult_30_reference": 3500,
+      "adult_40_reference": 5500,
+      "adult_50_reference": 9000
+    },
+    "min_age_days": 30,
+    "max_initial_age": 64,
+    "max_renewal_age": 99,
+    "child_standalone": false,
+    "family_discount": "待补充",
+    "regions": ["中国大陆"],
+    "hospital_network": {
+      "public_general": true,
+      "special_need": true,
+      "international_department": true,
+      "vip_department": true,
+      "private_hospital": true,
+      "expensive_hospital": false,
+      "summary": "公立普通/特需/部分国际部，部分指定私立医疗机构"
+    },
+    "direct_billing": {
+      "inpatient": true,
+      "outpatient": true,
+      "hospital_count": 0,
+      "summary": "住院和门急诊支持垫付"
+    },
+    "annual_limit": 6000000,
+    "deductible_options": [0, 15000, 30000],
+    "deductible": {
+      "medical_insurance_offset": false,
+      "all_departments_apply": true,
+      "cancer_zero_deductible": "无"
+    },
+    "outpatient": {
+      "included": true,
+      "optional": true,
+      "direct_billing": true,
+      "summary": "计划C含门诊，计划A/B单住院"
+    },
+    "inpatient": {
+      "included": true,
+      "room_limit": "1500-2500元/天",
+      "allowance": "计划B/C有住院津贴",
+      "rehabilitation": "待补充",
+      "durable_medical_equipment": "待补充",
+      "reconstructive_surgery": "待补充"
+    },
+    "drug_device": {
+      "out_of_hospital_drug": "待补充",
+      "cancer_special_drug": "待补充",
+      "device_limit": "待补充",
+      "proton_heavy_ion": "待补充"
+    },
+    "pre_existing_condition": {
+      "support_level": 1,
+      "summary": "除外责任",
+      "waiting_period": "计划A90天；计划B30天；计划C住院30天",
+      "first_year_limit": 0
+    },
+    "overseas_medical": {
+      "support_level": 1,
+      "summary": "不支持海外就医"
+    },
+    "value_added_services": ["绿通", "二诊"],
+    "underwriting": {
+      "mode": "健康告知/人工核保",
+      "attention": "正式投保前需核对健康告知和核保材料"
+    },
+    "tags": ["预算可控", "特需/国际部"],
+    "suitable_crowd": "性价比型，主要看大陆公立特需/国际部",
+    "notes": "性价比较高的基础版高端医疗，计划A/B单住院，计划C含门诊"
+  },
+  {
+    "product_id": "mh_med_011",
+    "product_name": "2024 精选个人",
+    "company": "大地保险",
+    "service_provider": "MSH 万欣和",
+    "category": "中高端医疗险",
+    "tier": "高端医疗",
+    "positioning": "标准版高端医疗",
+    "price_level": {
+      "level": "高",
+      "child_reference": 3500,
+      "adult_30_reference": 6500,
+      "adult_40_reference": 10000,
+      "adult_50_reference": 16000
+    },
+    "min_age_days": 30,
+    "max_initial_age": 64,
+    "max_renewal_age": 99,
+    "child_standalone": false,
+    "family_discount": "待补充",
+    "regions": ["中国大陆", "港澳台", "全球除美加", "全球"],
+    "hospital_network": {
+      "public_general": true,
+      "special_need": true,
+      "international_department": true,
+      "vip_department": true,
+      "private_hospital": true,
+      "expensive_hospital": true,
+      "summary": "公立 + 私立，可自主选择是否涵盖昂贵医院"
+    },
+    "direct_billing": {
+      "inpatient": true,
+      "outpatient": true,
+      "hospital_count": 0,
+      "summary": "住院和门急诊支持直付"
+    },
+    "annual_limit": 8000000,
+    "deductible_options": [0, 12000, 30000, 50000],
+    "deductible": {
+      "medical_insurance_offset": false,
+      "all_departments_apply": true,
+      "cancer_zero_deductible": "无"
+    },
+    "outpatient": {
+      "included": true,
+      "optional": true,
+      "direct_billing": true,
+      "limit": "大陆及港澳台4万，国际/全球8万",
+      "summary": "可选门诊，有年度限额"
+    },
+    "inpatient": {
+      "included": true,
+      "room_limit": "标准单人间",
+      "allowance": "住院津贴600元/天",
+      "rehabilitation": "全额",
+      "durable_medical_equipment": "全额",
+      "reconstructive_surgery": "全额"
+    },
+    "drug_device": {
+      "out_of_hospital_drug": "待补充",
+      "cancer_special_drug": "待补充",
+      "device_limit": "待补充",
+      "proton_heavy_ion": "待补充"
+    },
+    "pre_existing_condition": {
+      "support_level": 1,
+      "summary": "除外责任",
+      "waiting_period": "30天",
+      "first_year_limit": 0
+    },
+    "overseas_medical": {
+      "support_level": 4,
+      "summary": "全球紧急医疗，按所选方案覆盖海外就医"
+    },
+    "value_added_services": ["绿通", "二诊", "陪诊", "直付", "补充健享包2000/5000元"],
+    "underwriting": {
+      "mode": "健康告知/人工核保",
+      "attention": "正式投保前需核对健康告知和核保材料"
+    },
+    "maternity": {
+      "available": false,
+      "summary": "不含生育责任"
+    },
+    "tags": ["私立医院", "门诊直付", "海外/港澳台就医", "0免赔/低免赔"],
+    "suitable_crowd": "高端单住院、亲子家庭、希望灵活搭配方案",
+    "notes": "MSH/大地标准高端医疗，方案搭配灵活，可选单住院或住院+门诊"
+  },
+  {
+    "product_id": "mh_med_012",
+    "product_name": "2024 经典个人",
+    "company": "大地保险",
+    "service_provider": "MSH 万欣和",
+    "category": "中高端医疗险",
+    "tier": "高端医疗",
+    "positioning": "顶配高端医疗",
+    "price_level": {
+      "level": "很高",
+      "child_reference": 5000,
+      "adult_30_reference": 9000,
+      "adult_40_reference": 14000,
+      "adult_50_reference": 22000
+    },
+    "min_age_days": 30,
+    "max_initial_age": 70,
+    "max_renewal_age": 99,
+    "child_standalone": false,
+    "family_discount": "待补充",
+    "regions": ["中国大陆", "港澳台", "全球除美加", "全球"],
+    "hospital_network": {
+      "public_general": true,
+      "special_need": true,
+      "international_department": true,
+      "vip_department": true,
+      "private_hospital": true,
+      "expensive_hospital": true,
+      "summary": "公立 + 私立；昂贵医院自付比例按区域/方案区分"
+    },
+    "direct_billing": {
+      "inpatient": true,
+      "outpatient": true,
+      "hospital_count": 0,
+      "summary": "住院和门急诊支持直付"
+    },
+    "annual_limit": 8000000,
+    "deductible_options": [0, 20000, 50000],
+    "deductible": {
+      "medical_insurance_offset": false,
+      "all_departments_apply": true,
+      "cancer_zero_deductible": "无"
+    },
+    "outpatient": {
+      "included": true,
+      "optional": true,
+      "direct_billing": true,
+      "summary": "大中华保障可选，其他区域可含门诊；无单独年限额"
+    },
+    "inpatient": {
+      "included": true,
+      "room_limit": "标准单人间",
+      "allowance": "住院津贴1000元/天",
+      "rehabilitation": "全额",
+      "durable_medical_equipment": "全额",
+      "reconstructive_surgery": "全额"
+    },
+    "drug_device": {
+      "out_of_hospital_drug": "不限清单",
+      "cancer_special_drug": "不限清单",
+      "device_limit": "不限清单",
+      "proton_heavy_ion": "全额赔付"
+    },
+    "pre_existing_condition": {
+      "support_level": 4,
+      "summary": "核保通过的既往症3个月等待期；第1年7500元，之后逐年增长50%",
+      "waiting_period": "3个月",
+      "first_year_limit": 7500
+    },
+    "overseas_medical": {
+      "support_level": 5,
+      "summary": "全球紧急医疗，全球就医直付"
+    },
+    "value_added_services": ["绿通", "二诊", "陪诊", "直付", "补充健享包2000/5000元"],
+    "underwriting": {
+      "mode": "人工核保/健康告知",
+      "attention": "选择生育福利则无既往症福利，需注意"
+    },
+    "maternity": {
+      "available": true,
+      "limit": "7.2万/11万",
+      "summary": "可选生育福利7.2万/11万"
+    },
+    "tags": ["既往症友好", "门诊直付", "海外/港澳台就医", "生育/家庭计划", "私立医院"],
+    "suitable_crowd": "既往症单住院需求、福利全面、有生育需求、高预算家庭",
+    "notes": "顶配高端医疗，既往症可核保（第1年7500元，每年递增50%），可选生育福利。选择生育福利则无既往症福利"
+  }
+]

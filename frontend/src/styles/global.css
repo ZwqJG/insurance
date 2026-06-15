@@ -237,6 +237,28 @@ body {
 }
 
 /* 推荐区块 */
+/* 保险类型选择卡片 */
+.type-card {
+  border-radius: 16px;
+  height: 100%;
+  border: 2px solid #e8e8e8;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.type-card:hover {
+  box-shadow: 0 8px 24px rgba(22,119,255,0.15);
+}
+
+.type-card-child-ci:hover {
+  border-color: #1677ff;
+}
+
+.type-card-medical:hover {
+  border-color: #52c41a;
+  box-shadow: 0 8px 24px rgba(82,196,26,0.15);
+}
+
 .recommendation-box {
   background: linear-gradient(135deg, #e8f4fd 0%, #f0f9ff 100%);
   border: 1px solid #bae0ff;

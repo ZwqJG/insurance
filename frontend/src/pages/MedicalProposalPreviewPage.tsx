@@ -6,13 +6,13 @@ import {
   ReloadOutlined,
   PrinterOutlined,
 } from '@ant-design/icons'
-import { ProposalResult, ComparisonRow, ProductAnalysis } from '../types/proposal'
+import { MedicalProposalResult, MedicalComparisonRow, MedicalProductAnalysis } from '../types/medicalProposal'
 import EditableText from '../components/EditableText'
 import EditableTable from '../components/EditableTable'
 import AnalysisCard from '../components/AnalysisCard'
 
 interface Props {
-  proposalResult: ProposalResult
+  proposalResult: MedicalProposalResult
   onBack: () => void
   onRegenerate: () => void | Promise<void>
   regenerating?: boolean
@@ -22,7 +22,7 @@ interface Props {
   shareUrl?: string | null
 }
 
-const ProposalPreviewPage: React.FC<Props> = ({
+const MedicalProposalPreviewPage: React.FC<Props> = ({
   proposalResult,
   onBack,
   onRegenerate,
@@ -37,8 +37,8 @@ const ProposalPreviewPage: React.FC<Props> = ({
   const [title, setTitle] = useState(pc.title)
   const [customerSummary, setCustomerSummary] = useState(pc.customer_summary)
   const [matchSummary, setMatchSummary] = useState(pc.match_summary)
-  const [comparisonRows, setComparisonRows] = useState<ComparisonRow[]>(pc.comparison_table)
-  const [productAnalysis, setProductAnalysis] = useState<ProductAnalysis[]>(pc.product_analysis)
+  const [comparisonRows, setComparisonRows] = useState<MedicalComparisonRow[]>(pc.comparison_table)
+  const [productAnalysis, setProductAnalysis] = useState<MedicalProductAnalysis[]>(pc.product_analysis)
   const [recommendation, setRecommendation] = useState(pc.recommendation)
 
   const productIds = matched_products.map((p) => p.product_id)
@@ -128,7 +128,7 @@ const ProposalPreviewPage: React.FC<Props> = ({
             >
               {p.product_id === recommended_product_id ? '⭐ ' : ''}{p.product_name}
               <span style={{ marginLeft: 6, color: '#888', fontSize: 12 }}>
-                {p.estimated_annual_premium.toLocaleString('zh-CN', { maximumFractionDigits: 0 })}元/年
+                {p.tier} · {p.positioning}
               </span>
             </Tag>
           ))}
@@ -146,7 +146,7 @@ const ProposalPreviewPage: React.FC<Props> = ({
 
         <div className="section-block">
           <div className="section-heading">三、产品核心对比</div>
-          <EditableTable<ComparisonRow>
+          <EditableTable<MedicalComparisonRow>
             rows={comparisonRows}
             productIds={productIds}
             productNames={productNames}
@@ -159,7 +159,7 @@ const ProposalPreviewPage: React.FC<Props> = ({
         <div className="section-block">
           <div className="section-heading">四、产品优劣说明</div>
           {productAnalysis.map((analysis, i) => (
-            <AnalysisCard<ProductAnalysis>
+            <AnalysisCard<MedicalProductAnalysis>
               key={analysis.product_id}
               analysis={analysis}
               isRecommended={analysis.product_id === recommended_product_id}
@@ -180,12 +180,16 @@ const ProposalPreviewPage: React.FC<Props> = ({
           </div>
         </div>
 
-        <div style={{ marginTop: 32, paddingTop: 16, borderTop: '1px solid #e8e8e8', fontSize: 12, color: '#999', textAlign: 'center' }}>
-          本方案由儿童重疾险智能方案生成器自动生成 · 具体保障责任以保险公司正式条款为准 · 参考年缴保费以正式投保报价为准
+        <div style={{
+          marginTop: 32, paddingTop: 16, borderTop: '1px solid #e8e8e8',
+          fontSize: 12, color: '#999', textAlign: 'center',
+        }}>
+          本方案由中高端医疗险智能推荐系统自动生成 · 具体保障责任以保险公司正式条款为准 ·
+          参考保费以正式投保报价为准 · 本系统不作核保结论，最终能否承保以保险公司核保结果为准
         </div>
       </div>
     </div>
   )
 }
 
-export default ProposalPreviewPage
+export default MedicalProposalPreviewPage
